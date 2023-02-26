@@ -30,9 +30,11 @@ public class javaTest {
                     winArray[k] = (int)(Math.random()*range) + min;
                     System.out.print(" "+winArray[k]);                   
                 }
-                for(int x=0; x<6; x++){
-                    if(pickedArray[x] == winArray[x]){
+                for(int x1=0; x1<6; x1++){
+                    for(int x2=0; x2<6; x2++){
+                        if(pickedArray[x1] == winArray[x2]){
                         match = match + 1;
+                        }
                     }
                 }
                 System.out.println("\nYour ticket has matched " + match + " number(s)");
@@ -75,9 +77,11 @@ public class javaTest {
                 for(int t=0; t<6; t++){
                      System.out.print(" "+winArray[t]);
                 }
-                for(int x=0; x<6; x++){
-                    if(pickedArray[x] == winArray[x]){
+                for(int x1=0; x1<6; x1++){
+                    for(int x2=0; x2<6; x2++){
+                        if(pickedArray[x1] == winArray[x2]){
                         match = match + 1;
+                        }
                     }
                 }
                 System.out.println("\nYour ticket has matched " + match + " number(s)");
